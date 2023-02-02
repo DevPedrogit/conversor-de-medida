@@ -19,8 +19,23 @@
                 <label for="valor">Informe quantos metros (m) deseja converter:</label>
                 <input type="number" id="valor" class="input">
             </div>
-            <button class="btn00" id="btn">Converter</button>
+            <button class="btn00" id="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">Converter</button>
         </section>
+        <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Resultado</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <h6 class="textMm"></h6>
+              <p class="km">Quilômetros: <span></span></p>
+              <p class="hm">Hectômetro: <span></span></p>
+              <p class="dam">Decâmetros: <span></span></p>
+              <p class="dm">Decimetros: <span></span></p>
+              <p class="cm">Centimetros: <span></span></p>
+              <p class="mm">Milimetros: <span></span></p>
+            </div>
+        </div>
     </div>
 
     <!-- Script JS -->
